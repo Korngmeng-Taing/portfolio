@@ -260,17 +260,22 @@ nav {
   align-items: center;
 }
 
-.image-placeholder {
+.about-img {
   width: 100%;
+  max-width: 280px;
   aspect-ratio: 1;
-  background: var(--card-bg);
-  border-radius: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  border: 4px solid var(--accent);
+  box-shadow: 0 8px 25px rgba(108, 99, 255, 0.25);
+}
+
+.about-image {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 5rem;
-  color: var(--accent);
-  border: 3px dashed var(--border);
 }
 
 .about-text h3 {
