@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="logo">Portfolio</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1>TAING KORNGMENG</h1>
+      <p class="hero-title">Data Science & Financial Engineering Student</p>
+      <p class="hero-description">
+        I turn data into insights and build models that drive smarter financial decisions.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/Korngmeng-Taing" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/taing-korngmeng" aria-label="LinkedIn"><i
+            class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <div class="image-placeholder">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+        <div class="about-text">
+          <h3>Passionate About Data & Financial Markets</h3>
+          <p>
+            I'm a student specializing in Data Science and Financial Engineering,
+            with experience in statistical modeling, machine learning, and quantitative analysis.
+          </p>
+          <p>
+            I love applying mathematical and computational methods to solve
+            complex problems in finance and beyond.
+          </p>
+          <div class="about-details">
+            <div><strong>Name:</strong> Taing korngmeng</div>
+            <div><strong>Email:</strong> korngmeng015@gmail.com</div>
+            <div><strong>Location:</strong> Sen Sok, Phnom Penh</div>
+            <div><strong>Availability:</strong> Open to opportunities</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-python"></i>
+          <h3>Python</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Machine Learning</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-calculator"></i>
+          <h3>Statistics</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database"></i>
+          <h3>SQL</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-table"></i>
+          <h3>R / RStudio</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-money-bill-trend-up"></i>
+          <h3>Quant Finance</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-chart-pie"></i>
+          <h3>Power BI</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-git-alt"></i>
+          <h3>Git</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-code"></i>
+          <h3>Django</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-stream"></i>
+          </div>
+          <div class="project-info">
+            <h3>Data Streaming Pipeline</h3>
+            <p>End-to-end data streaming platform with Apache Spark, Kafka, ML models, Dash dashboard, and Docker deployment.
+            </p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Spark</span>
+              <span>Kafka</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Korngmeng-Taing/data-streaming" aria-label="Source code"><i class="fab fa-github"></i> Code</a>
+              <a href="#" aria-label="Live demo"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-calculator"></i>
+          </div>
+          <div class="project-info">
+            <h3>Tax Calculation Web <span class="team-badge">Team</span></h3>
+            <p>Django-based web app for salary, property, and VAT tax calculations with multi-currency support
+              (KHR/USD).
+            </p>
+            <div class="project-tags">
+              <span>Django</span>
+              <span>Python</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Korngmeng-Taing/tax_calculation_web" aria-label="Source code"><i
+                  class="fab fa-github"></i> Code</a>
+              <a href="https://taxcalculationweb.vercel.app" aria-label="Live demo"><i
+                  class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://raw.githubusercontent.com/Korngmeng-Taing/olist-powerbi-dashboard/master/image/overview.png" alt="Olist Dashboard Overview" style="width:100%;height:100%;object-fit:cover;border-radius:8px">
+          </div>
+          <div class="project-info">
+            <h3>Olist Power BI Dashboard</h3>
+            <p>Interactive Power BI dashboard analyzing 600K+ e-commerce transactions from Olist, Brazil's largest marketplace, with 40+ visuals across 5 pages.</p>
+            <div class="project-tags">
+              <span>Power BI</span>
+              <span>SQL</span>
+              <span>DAX</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Korngmeng-Taing/olist-powerbi-dashboard" aria-label="Source code"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-description">
+        Have a project in mind or just want to say hi? Feel free to reach out!
+      </p>
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+      <div class="contact-socials">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Taing Korngmeng. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
