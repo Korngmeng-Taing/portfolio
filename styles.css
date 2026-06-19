@@ -364,6 +364,23 @@ nav {
   justify-content: center;
   font-size: 3.5rem;
   color: var(--accent);
+  overflow: hidden;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+}
+
+.project-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 .project-info {
