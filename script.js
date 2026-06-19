@@ -26,6 +26,34 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   });
 });
 
+const slideshow = document.querySelector('.slideshow');
+if (slideshow) {
+  const slides = slideshow.querySelectorAll('.slide');
+  const prevBtn = slideshow.querySelector('.prev');
+  const nextBtn = slideshow.querySelector('.next');
+  const dotsContainer = slideshow.querySelector('.slide-dots');
+  let current = 0;
+
+  slides.forEach((_, i) => {
+    const dot = document.createElement('span');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(dot);
+  });
+
+  function goTo(index) {
+    slides[current].classList.remove('active');
+    dotsContainer.children[current].classList.remove('active');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dotsContainer.children[current].classList.add('active');
+  }
+
+  prevBtn.addEventListener('click', () => goTo(current - 1));
+  nextBtn.addEventListener('click', () => goTo(current + 1));
+  setInterval(() => goTo(current + 1), 4000);
+}
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const btn = form.querySelector('.btn');
