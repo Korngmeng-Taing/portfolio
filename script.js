@@ -26,8 +26,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   });
 });
 
-const slideshow = document.querySelector('.slideshow');
-if (slideshow) {
+document.querySelectorAll('.slideshow').forEach(slideshow => {
   const slides = slideshow.querySelectorAll('.slide');
   const prevBtn = slideshow.querySelector('.prev');
   const nextBtn = slideshow.querySelector('.next');
@@ -52,7 +51,7 @@ if (slideshow) {
   prevBtn.addEventListener('click', () => goTo(current - 1));
   nextBtn.addEventListener('click', () => goTo(current + 1));
   setInterval(() => goTo(current + 1), 4000);
-}
+});
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
